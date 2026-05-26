@@ -1,0 +1,33 @@
+{
+  "default_provider": "deepseek",
+  "proxy": {
+    "base_url": "http://your-proxy-domain:port",
+    "host_entry": "your-proxy-domain:ip-address"
+  },
+  "providers": [
+    {
+      "name": "deepseek",
+      "base_url": "https://api.deepseek.com",
+      "api_key": "sk-your-deepseek-key",
+      "env": {
+        "ANTHROPIC_MODEL": "deepseek-v4-flash"
+      }
+    },
+    {
+      "name": "openai",
+      "base_url": "https://api.openai.com/v1",
+      "api_key": "sk-your-openai-key",
+      "env": {
+        "ANTHROPIC_MODEL": "gpt-4o"
+      }
+    },
+    {
+      "name": "anthropic",
+      "base_url": "https://api.anthropic.com",
+      "api_key": "sk-ant-your-anthropic-key",
+      "env": {
+        "ANTHROPIC_MODEL": "claude-sonnet-4-6"
+      }
+    }
+  ]
+}
