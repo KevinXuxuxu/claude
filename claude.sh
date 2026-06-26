@@ -62,6 +62,7 @@ docker_args=(
     -v "$HOME/.claude.json:/root/.claude.json"
     -v "$HOME/.cache/uv:/root/.cache/uv"
     -v "$HOME/.cache/huggingface:/root/.cache/huggingface"
+    -v "$HOME/.cargo/registry:/usr/local/cargo/registry"
     -v "$PWD:$mount_target"
     -w "$mount_target"
     -it
